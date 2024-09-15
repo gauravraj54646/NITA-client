@@ -97,13 +97,15 @@ const JobPost = () => {
     const formData = new FormData();
     formData.append("title", title);
     formData.append("jobType", jobType);
-    formData.append("location", location);
+    // formData.append("location", location);
+    formData.append("Year", Year);
+
     formData.append("companyName", companyName);
     formData.append("introduction", introduction);
     formData.append("responsibilities", responsibilities);
     formData.append("qualifications", qualifications);
     offers && formData.append("offers", offers);
-    formData.append("job", jobFields);
+    formData.append("jobFields", jobFields);
     formData.append("salary", salary);
     Opportunities && formData.append("Opportunities", Opportunities);
     personalWebsiteTitle &&
@@ -153,8 +155,8 @@ const JobPost = () => {
         <label>Year(1st,2nd,3rd,4th)</label>
         <select
           key={Math.random() * (200000 - 100000) + 100000}
-          value={location}
-          onChange={(e) => setLocation(e.target.value)}
+          value={Year}
+          onChange={(e) => setYear(e.target.value)}
         >
           <option value="">Select your year</option>
           {years.map((element) => {

@@ -79,7 +79,7 @@ const Navbar = () => {
         </div>
 
         {/* New h4 heading with black color */}
-        <h7 style={{ color: "red" , fontWeight: "bold" , fontSize:"1.4em"}}>Training/Internship & Placement Cell, NIT Agartala</h7>
+        <h6 style={{ color: "red" , fontWeight: "bold" , fontSize:"1.4em"}}>Training/Internship & Placement Cell, NIT Agartala</h6>
 
         <div className="links">
           <ul>

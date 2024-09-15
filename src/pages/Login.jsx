@@ -50,9 +50,9 @@ const Login = () => {
               <label>Login As</label>
               <div>
                 <select value={role} onChange={(e) => setRole(e.target.value)}>
-                  <option value="">Select Role</option>
-                  <option value="T/I&Pcell">Login as Traning & Placement Member</option>
-                  <option value="Student">Login as Student</option>
+                   <option value="">Select Role</option> 
+                  <option value="T/I&Pcell">T/I&Pcell</option>
+                  <option value="Student">Student</option>
                 </select>
                 <FaRegUser />
               </div>
@@ -81,7 +81,10 @@ const Login = () => {
                 <RiLock2Fill />
               </div>
             </div>
-            <button type="submit" disabled={loading}>
+            <button type="submit" 
+            disabled={loading}
+            
+            >
               Login
             </button>
             <Link to={"/register"}>Register Now</Link>

@@ -93,7 +93,7 @@ const Dashboard = () => {
                   </button>
                 </li>
               )}
-              {user && user.role === "T/I&Pcell" && (   //Employer
+              {user && user.role === "Student" && (   //Employer
                 <li>
                   <button
                     onClick={() => {
@@ -104,7 +104,8 @@ const Dashboard = () => {
                     My Jobs
                   </button>
                 </li>
-              )}
+               )
+              }
               {user && user.role === "T/I&Pcell" && (
                 <li>
                   <button
